@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kotak</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .containermain {
+        background-color: rgb(164, 164, 190);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        border: 1px solid gray;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      .container1 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* section2 */
+      .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        
+        gap: 5px;
+        justify-content: center;
+        width:30%
+        
+      }
+      .totally-secure,
+      .widely-accepted,
+      .just-tap {
+        width: 29%;
+        padding: 10px;
+      }
+      .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      /* Responsive Styles */
+      @media screen and (max-width: 600px) {
+        .containermain {
+          height: auto;
+        }
+
+        .section2 {
+          flex-direction: column;
+        }
+
+        .totally-secure,
+        .widely-accepted,
+        .just-tap {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .container1 {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containermain">
+      <div class="container1">
+        <div>
+          <img class="img" src="./images/banner.jpg" alt="" />
+        </div>
+      </div>
+      <!-- section2 -->
+      <div class="container2">
+        <div class="section2">
+          <div class="totally-secure">
+            <img
+              style="height: auto; width: 20%; margin: auto; display: block"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Information_icon.svg/768px-Information_icon.svg.png"
+              alt=""
+            />
+            <h3>Totally Secure</h3>
+            <p>
+              Enable or disable your Debit Card for Online, Contactless
+              Transactions & more via Kotak Mobile Banking App/Net Banking
+            </p>
+          </div>
+          <div class="widely-accepted">
+            <img
+              style="height: auto; width: 20%; margin: auto; display: block"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Information_icon.svg/768px-Information_icon.svg.png"
+              alt=""
+            />
+            <h3>widely-accepted</h3>
+            <p>
+              Transact easily at retail outlets, leading online shopping
+              websites & apps
+            </p>
+          </div>
+          <div class="just-tap">
+            <img
+              style="height: auto; width: 20%; margin: auto; display: block"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Information_icon.svg/768px-Information_icon.svg.png"
+              alt=""
+            />
+            <h3>Just Tap & Pay</h3>
+            <p>Enjoy faster payments at cash counters</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>

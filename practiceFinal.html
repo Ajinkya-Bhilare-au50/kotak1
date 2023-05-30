@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kotak</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid #eaeaea;
+      background-color: #fff;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .banner {
+      width: 100%;
+      margin-top: -10px;
+    }
+
+    .section {
+      padding: 30px 40px 0;
+      text-align: center;
+    }
+
+    .icon {
+      margin-bottom: 10px;
+    }
+
+    .icon img {
+      display: inline-block;
+    }
+
+    .section p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #051821;
+      margin-bottom: 5px;
+    }
+
+    .section p.description {
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0 10px;
+    }
+
+    .feature-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .feature {
+      flex: 1;
+      padding: 0 10px;
+    }
+
+    .feature img {
+      display: inline-block;
+    }
+
+    .line {
+      vertical-align: bottom;
+      width: 2px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 500;
+      color: #051821;
+      margin-bottom: 5px;
+    }
+
+    .section-title-large {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .image-container {
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+    }
+
+    .button-container {
+      text-align: center;
+      padding: 0 0 20px;
+      border-bottom: 1px solid #000000;
+    }
+
+    .button {
+      display: inline-block;
+    }
+
+    .footer {
+      padding: 10px 40px;
+      border-top: 1px solid #a7a9ac;
+      text-align: center;
+      font-size: 11px;
+      color: #000;
+    }
+
+    .footer a {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .social-media {
+      display: inline-block;
+    }
+
+    .social-media img {
+      margin-right: 3px;
+    }
+
+    .unsubscribe {
+      padding: 10px 0;
+      text-align: center;
+      font-size: 11px;
+      color: #000;
+    }
+
+    .unsubscribe a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .icon-boxes {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .apply {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .kotakCurrency {
+      font-size: large;
+      padding: 12px 11px;
+    }
+    
+    .section-heading {
+      display: flex;
+      justify-content: center;
+      padding: 35px 30px;
+      background-color: #ececec;
+    }
+    
+    .section-background {
+      background-color: #ececec;
+      padding-bottom: 5px;
+    }
+    
+    .discover {
+      display: flex;
+      justify-content: center;
+      padding: 14px;
+    }
+    
+    .top {
+      display: flex;
+      padding: 20px;
+      justify-content: space-between;
+    }
+    
+    .section-steps {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 35px 0px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 767px) {
+      .container {
+        max-width: 100%;
+      }
+
+      .section {
+        padding: 20px 10px;
+      }
+
+      .section p {
+        font-size: 14px;
+      }
+
+      .section p.description {
+        font-size: 10px;
+      }
+
+      .section-title {
+        font-size: 12px;
+      }
+
+      .section-title-large {
+        font-size: 12px;
+      }
+
+      .footer {
+        font-size: 10px;
+      }
+
+      .unsubscribe {
+        font-size: 10px;
+      }
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 480px) {
+      .top {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .top img {
+        margin-bottom: 10px;
+      }
+
+      .apply img {
+        max-width: 100%;
+      }
+
+      .kotakCurrency {
+        font-size: 14px;
+        padding: 8px;
+      }
+
+      .section-title {
+        font-size: 16px;
+      }
+
+      .section-title-large {
+        font-size: 18px;
+      }
+
+      .section-heading {
+        padding: 25px;
+      }
+
+      .section-steps {
+        padding: 25px 0;
+      }
+
+      .section-steps h3 {
+        font-size: 16px;
+      }
+
+      .footer {
+        font-size: 12px;
+      }
+    }
+
+    /* iPad Styles */
+    @media (min-width: 481px) and (max-width: 1024px) {
+      .container {
+        width: 100%;
+      }
+
+      .section-steps {
+        padding: 25px 40px;
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <div class="container">
+    <div class="top">
+      <img src="./images/kotakLogo1.png" alt="" />
+      <img src="./images/kotakLogo2.png" alt="" />
+    </div>
+    <div class="banner">
+      <img src="./images/heroImage.png" alt="Banner" style="width: 100%" />
+    </div>
+    <div class="apply"><img src="./images/apply.png" alt="" /></div>
+    <div class="kotakCurrency">
+      <p>
+        Kotak Foreign Currency Cash Services simplifies the process of
+        arranging foreign currency for your travels abroad. With a simple
+        application through the Kotak Mobile App, we’ll deliver the currency
+        straight to your doorstep
+      </p>
+    </div>
+    <!-- here icon boxes -->
+    <div class="section-background">
+      <div class="section-heading">
+        <h3>Discover the benefits that await you</h3>
+      </div>
+      <div class="discover">
+        <div class="icon">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              style="width: 50px"
+              src="./images/serviceAvailable.png"
+              alt=""
+            />
+          </div>
+          <h3>Service available in 15 major currencies</h3>
+        </div>
+        <div class="icon">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img style="width: 49px" src="./images/skipBranch.png" alt="" />
+          </div>
+          <h3>Skip branch visit with doorstep delivery*</h3>
+        </div>
+        <div class="icon">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              style="width: 50px"
+              src="./images/serviceAvailable.png"
+              alt=""
+            />
+          </div>
+          <h3>Apply conveniently via Kotak Mobile App</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-steps">
+      <h3>Follow the below steps to apply</h3>
+      <div><img src="./images/clickForex.png" alt="" /></div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+      "
+    >
+      <img src="./images/apply.png" alt="" />
+    </div>
+    <div style="padding: 8px 25px">
+      <p>
+        *Doorstep delivery by authorised money changers. A maximum foreign
+        currency cash of USD 3000 equivalent per financial year can be availed
+        under this facility. This shall be subject to the overall limit under
+        Liberalised Remittance Scheme during the financial year. By clicking on
+        the links above, you are hereby giving your consent to receive calls /
+        communication for marketing purposes through Telephone / Mobile / SMS /
+        Email for the above-mentioned product / offer and that such consents
+        shall prevail over any current or subsequent registration of your number
+        in the National Do Not Call Registry. Service available in select
+        cities. Terms and conditions apply
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>
+        &copy; 2023 Kotak. All rights reserved. |
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </p>
+      <div class="social-media">
+        <a href="#"><img src="./images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="./images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="./images/instagram.png" alt="Instagram" /></a>
+      </div>
+      <p class="unsubscribe">
+        You are receiving this email because you are subscribed to our mailing
+        list. If you wish to unsubscribe, please
+        <a href="#">click here</a>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

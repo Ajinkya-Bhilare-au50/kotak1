@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        max-width: 100%;
+        background-color: rgb(210, 159, 97);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div1,
+      .div2,
+      .div3 {
+        flex-grow: 1;
+        height: 100vh;
+        border: 0.5px solid gray;
+      }
+      .div1 {
+        background-color: sandybrown;
+      }
+      .div2 {
+        background-color: rgb(134, 125, 215);
+      }
+      .div3 {
+        background-color: rgb(49, 168, 93);
+      }
+
+      @media (max-width: 767px) {
+        .div2 {
+          width: 100%;
+        }
+      }
+
+      /* Additional CSS for responsive image */
+      .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .container1 .img {
+        max-width: 100%;
+        height: auto;
+      }
+      .section2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .center-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .icon-box {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      }
+      .icon-box img {
+        width: 40px;
+      }
+      .t1 {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="div2">
+        <div class="container1">
+          <div style="border: 1px solid red">
+            <img class="img" src="./images/banner.jpg" alt="" />
+            <div class="section2">
+              <div class="t1">
+                <div class="center-image">
+                  <div class="icon-box">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/3171/3171593.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="t1">
+                <div class="center-image">
+                  <div class="icon-box">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/3171/3171593.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="t1">
+                <div class="center-image">
+                  <div class="icon-box">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/3171/3171593.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>
